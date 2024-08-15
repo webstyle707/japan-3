@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    
+    <div class="w-[980px] mx-auto">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/4.png" alt="">
+              </div>
+    
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 10
+    }
+  }
+        });
+      </script>
+</body>
+</html>
